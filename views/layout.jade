@@ -1,0 +1,26 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+    script(type='text/javascript', src="http://localhost:3000/nowjs/now.js")
+    script(type='text/javascript')
+      now.ready(function(){
+        now.name = prompt("What's your name?", "");  
+        now.receiveMessage = function(name, message){
+          $("#messages").append("<br><span class='message'><span class='who'>"+name+" : "+new Date().toDateString()+"</span><p>"+message+"</p></span>");
+          document.getElementById('messages').scrollTop=document.getElementById('messages').scrollHeight-document.getElementById('messages').clientHeight
+        }
+        $("#text-input").keydown(function(evt) {
+          if (evt.which === 13) {
+            now.distributeMessage($("#text-input").val());
+            $("#text-input").val("")
+          }
+        });
+        $("#send-button").click(function(){
+          now.distributeMessage($("#text-input").val());
+          $("#text-input").val("")
+        });
+      });
+  body!= body

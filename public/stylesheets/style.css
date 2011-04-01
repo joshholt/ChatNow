@@ -1,0 +1,93 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#subject {
+  position: absolute;
+  top: 0;
+  height: 48px;
+  right:0;
+  left:0;
+  border-bottom: 1px solid #222;
+  overflow:hidden;
+  background: #cedce7;
+  background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); 
+  padding-left: 10px;
+  text-shadow: #92a2ab 0 2px 0;
+  line-height: 1.0;
+  color: #5b5b5b;
+}
+
+#messages {
+  position: absolute;
+  top: 48px;
+  bottom: 68px;
+  right:0;
+  left:0;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+#messages .message {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+#messages .message .who {
+  display: block;
+  height: 18px;
+  width: 100%;
+  font-family: "Monaco", mono;
+  font-size: 9pt;
+  margin-left: 10px;
+  height: 24px;
+  top: 10px;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px solid #222;
+}
+
+#messages p {
+  margin-right: 50px;
+  margin-left: 50px;
+  display: block;
+}
+
+#messages .message .when {
+  display: block;
+  height: 18px;
+  width: 150px;
+  font-family: "Monaco", mono;
+  font-size: 9pt;
+  margin-left: 10px;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+#text-input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 33px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 94%;
+}
+
+#bottom-bar {
+ height: 48px; 
+ bottom: 0;
+ right: 0;
+ left: 0;
+ position: absolute;
+ border-top: 1px solid #222;
+ padding: 10px;
+ background: #cedce7;
+ background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 );
+}
